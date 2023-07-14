@@ -10,14 +10,14 @@
 
 int main(void)
 {
-	int digit = 0;
+	int i;
 
-	for (digit = 48, digit < 58, digit++)
+	for (i = 48, i < 58, i++)
 	{
-	putchar("digit");
+		putchar(i);
 	}
 
-	putchar("\n");
+	putchar('\n');
 
 	return (0);
 }
