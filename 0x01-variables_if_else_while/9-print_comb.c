@@ -5,22 +5,25 @@
 /**
  * main - Entry point
  *
- * Description:  program that prints the all  numbers of base 16 in lowercase
+ * Description:  program that prints all combinations of single-digit numbers
  *
  * Return: Alawys 0 (Success)
 */
 
 int main(void)
 {
-	int i = 48;
+	int i = 0;
 
-	while (i <= 102)
+	while (i <= 9)
 	{
-		putchar(i);
+		putchar(i + 48);
 
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 
-		if (i == 57)
-			i += 39;
 		i++;
 	}
 	putchar('\n');
