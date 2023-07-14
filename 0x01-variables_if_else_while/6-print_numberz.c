@@ -5,19 +5,19 @@
 /**
  * main - Entry point
  *
- * Description:  program that prints the single numbers of base 10 start from 0
+ * Description: program  prints single digit numbers of base 10 start from 0
  *
  * Return: Alawys 0 (Success)
 */
 
 int main(void)
 {
-	int i = 0;
+	int digit = 0;
 
-	while (i <= 9)
+	while (digit <= 9)
 	{
-		putchar(i + '0');
-		i++;
+		putchar(digit + '0');
+		digit++;
 	}
 	putchar("\n");
 
