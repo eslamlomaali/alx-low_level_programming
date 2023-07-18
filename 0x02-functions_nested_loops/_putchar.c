@@ -7,7 +7,6 @@
  *
  * Return: success 1
  * error: return -1
- *
  */
 int _putchar(char c)
 {
