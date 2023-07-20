@@ -5,17 +5,27 @@
  *
  * @size: The size of square
  *
- * Return: Always 0 
+ * Return: Always 0
  */
 
 void print_square(int size)
 {
-	int a, b;
 
-	for (a = 1; a <= size; a++)
+	int x, y;
+
+	if (size <= 0)
 	{
-		for (b = 1; b <= size; b++)
-			_putchar('#');
-		_putchar('\n');
+	_putchar('\n');
+	}
+	else
+	{
+	for (x = 0; x < size; x++)
+	{
+	for (y = 0; y < size; y++)
+	{
+	_putchar(35);
+	}
+	_putchar('\n');
+	}
 	}
 }
