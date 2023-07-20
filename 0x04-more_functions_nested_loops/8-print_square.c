@@ -2,14 +2,14 @@
 
 /**
  * print_square - Prints squares
+ *
  * @size: The size of square
- * Return: empty
+ *
+ * Return: Always 0 
  */
 
 void print_square(int size)
-
 {
-
 	int a, b;
 
 	for (a = 1; a <= size; a++)
