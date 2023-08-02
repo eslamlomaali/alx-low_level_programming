@@ -15,10 +15,6 @@ int _pow_recursion(int a, int b)
 	{
 		return (-1);
 	}
-	else if (b == 1)
-	{
-		return (a);
-	}
 	else if (b == 0)
 	{
 		return (1);
