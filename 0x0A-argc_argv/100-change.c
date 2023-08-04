@@ -10,31 +10,46 @@
  * Return: If the number of arguments is not - 1.
  *         Otherwise - 0.
  */
+
 int main(int argc, char *argv[])
 {
+	int cents, dollar = 0;
+
 	if (argc != 2)
-
-	{
-	int a, lcent = 0, money = atoi(argv[1]);
-	int cents[] = {25, 10, 5, 2, 1};
-
-	for (a = 0; a < 5; a++)
-	{
-		if (money >= cents[a])
-		{
-			lcent += money / cents[a];
-			money = money % cents[a];
-			if (money % cents[a] == 0)
-			{
-				break;
-			}
-		}
-		printf("%d\n", lcent);
-	}
-	else
 	{
 		printf("Error\n");
 		return (1);
 	}
+
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
+	{
+		dollar++;
+		if ((cents - 25) >= 0)
+		{
+			cents -= 25;
+			continue;
+		}
+		if ((cents - 10) >= 0)
+		{
+			cents -= 10;
+			continue;
+		}
+		if ((cents - 5) >= 0)
+		{
+			cents -= 5;
+			continue;
+		}
+		if ((cents - 2) >= 0)
+		{
+			cents -= 2;
+			continue;
+		}
+		cents--;
+	}
+
+	printf("%d\n", dollar);
+
 	return (0);
 }
