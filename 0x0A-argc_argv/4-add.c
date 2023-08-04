@@ -20,6 +20,6 @@ int main(int argc, char *argv[])
 				return(printf("Error\n"), 1)
 			total += atoi(argv[argc]);
 	}
-	(printf("%d\n"), total);
+	printf("%d\n", total);
 	return (0);
 }
