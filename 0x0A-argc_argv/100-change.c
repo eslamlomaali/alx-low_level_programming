@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc == 2)
+	if (argc != 2)
 
 	{
 	int a, lcent = 0, money = atoi(argv[1]);
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 			{
 				break;
 			}
-	}
+		}
 		printf("%d\n", lcent);
 	}
 	else
