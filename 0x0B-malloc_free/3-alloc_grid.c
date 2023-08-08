@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
   * alloc_grid - Write a function that returns a pointer to a
@@ -13,7 +12,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	int w, x, y, l;
+	int w, x, y, z;
 	int **c;
 
 	if (width <= 0 || height <= 0)
