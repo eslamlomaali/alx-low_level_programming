@@ -43,7 +43,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (m == NULL)
 		return (NULL);
 
-	for (a = 0; a < old_size && i < new_size; a++)
+	for (a = 0; a < old_size && a < new_size; a++)
 	{
 		m[a] = ((char *) ptr)[a];
 	}
