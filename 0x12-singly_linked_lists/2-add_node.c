@@ -9,12 +9,12 @@
   */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t p;
+	list_t *p;
 
 	if (head != NULL && str != NULL)
 	{
 		p = malloc(sizeof(list_t));
-		if (p == NULL)
+		if (temp == NULL)
 			return (NULL);
 
 		p->str = strdup(str);
@@ -31,9 +31,9 @@ list_t *add_node(list_t **head, const char *str)
 
 /**
   * _strlen - Returns the length of a string
-  * @s: String
+  * @s: String to
   *
-  * Return: String length
+  * Return: String
   */
 int _strlen(const char *s)
 {
