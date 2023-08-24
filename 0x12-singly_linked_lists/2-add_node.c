@@ -37,13 +37,13 @@ list_t *add_node(list_t **head, const char *str)
   */
 int _strlen(const char *s)
 {
-	int i = 0;
+	int c = 0;
 
 	while (*s)
 	{
 		s++;
-		i++;
+		c++;
 	}
 
-	return (i);
+	return (c);
 }
