@@ -39,8 +39,11 @@ int _strlen(const char *s)
 {
 	int i = 0;
 
-	for (; *s; ++s, i++)
+	while (*s)
 	{
-		return (i);
+		s++;
+		i++;
 	}
+
+	return (i);
 }
