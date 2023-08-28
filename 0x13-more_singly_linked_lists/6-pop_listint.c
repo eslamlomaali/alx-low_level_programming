@@ -6,7 +6,7 @@
 *
 *@head: head of the list
 *
-*Return: the deleted node data
+*Return: poped node
 */
 
 int pop_listint(listint_t **head)
@@ -15,7 +15,7 @@ int pop_listint(listint_t **head)
 	int i;
 
 	if (!head || !*head)
-	return (0);
+		return (0);
 
 	pop = (*head)->next;
 	i = (*head)->i;
