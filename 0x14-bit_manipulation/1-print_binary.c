@@ -10,7 +10,7 @@
 void print_binary(unsigned long int number)
 {
 	if (number == 0)
-        {
+	{
 		_putchar('0');
 		return;
 	}
@@ -31,7 +31,7 @@ void _div(unsigned long int num)
 
 	_div(num >> 1);
 
- 	if (num & 1)
+	if (num & 1)
 		_putchar('1');
 	else
 		_putchar('0');

@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *bin)
 	if (bin == NULL)
 		return (0);
 
-	x = _string_length(bin);
+	x = _strlen(bin);
 	while (x--)
 	{
 		if (bin[x] != 48 && bin[x] != 49)
@@ -29,16 +29,16 @@ unsigned int binary_to_uint(const char *bin)
 }
 
 /**
-  * _string_length - calc the length of a string
-  * @c: String
+  * _strlen - calc the length of a string
+  * @s: String
   *
   * Return: String length
   */
-int _string_length(const char *c)
+int _strlen(const char *s)
 {
 	int a = 0;
 
-	while (c[a])
+	while (s[a])
 	a++;
 
 	return (a);

@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int _string_length(const char *c);
+int _strlen(const char *s);
 unsigned int binary_to_uint(const char *bin);
 int _putchar(char c);
 void print_binary(unsigned long int number);
