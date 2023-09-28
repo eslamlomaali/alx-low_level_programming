@@ -10,7 +10,10 @@
   */
 int set_bit(unsigned long int *number, unsigned int idx)
 {
-	if (idx > sizeof(unsigned long int) * 8)
+	if (idx > sizeof(number) * 8)
 		return (-1);
 
-	return ((*number |= 1 << idx) ? 1 : -1);
+	*number |= (1 << idx);
+	return (1);
+
+}
