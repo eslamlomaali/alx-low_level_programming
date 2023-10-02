@@ -22,12 +22,12 @@ void p_8(unsigned long int y, unsigned char *e);
 void exit(int e);
 
 /**
- * c_1 - file is an ELF file or not
+ * check_elf - file is an ELF file or not
  * @e: A pointer.
  *
  * Description: If the file is not an ELF file.
  */
-void c_1(unsigned char *e)
+void check_elf(unsigned char *e)
 {
 	int x;
 
@@ -299,7 +299,7 @@ int main(int __attribute__((__unused__)) ac, char *av[])
 		exit(98);
 	}
 
-	c_1(h->e);
+	check_elf(h->e);
 	printf("ELF Header:\n");
 	p_1(h->e);
 	p_2(h->e);
