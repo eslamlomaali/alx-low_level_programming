@@ -1,3 +1,7 @@
+/*
+ * File: 100-elf_header.c
+ */
+
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -23,7 +27,7 @@ void exit(int e);
  *
  * Description: If the file is not an ELF file.
  */
-void check_elf(unsigned char *e)
+void c_1(unsigned char *e)
 {
 	int x;
 
@@ -101,10 +105,10 @@ void p_3(unsigned char *e)
 		printf("none\n");
 		break;
 	case ELFDATA2LSB:
-		printf("2's complement, little\n");
+		printf("2's complement, little endian\n");
 		break;
 	case ELFDATA2MSB:
-		printf("2's complement, big\n");
+		printf("2's complement, big endian\n");
 		break;
 	default:
 		printf("<unknown: %x>\n", e[EI_CLASS]);
