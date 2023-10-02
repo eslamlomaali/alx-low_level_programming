@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void c_1(unsigned char *e);
+void check_elf(unsigned char *e);
 void p_1(unsigned char *e);
 void p_2(unsigned char *e);
 void p_3(unsigned char *e);
