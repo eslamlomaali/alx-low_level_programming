@@ -1,3 +1,6 @@
+/*
+ * File: 100-elf_header.c
+ */
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
