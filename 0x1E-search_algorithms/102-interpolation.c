@@ -1,13 +1,13 @@
 #include "search_algos.h"
 
 /**
- * interpolation_search - Write a function that searches for a value in a
- * sorted array of integers using the Interpolation search algorithm
+ * interpolation_search - searches for a value in array
+ * using the Interpolation search algorithm
  *
- * @array: input
- * @size:  array size
- * @value: value to search
- * Return: index
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
 int interpolation_search(int *array, size_t size, int value)
 {
@@ -36,7 +36,8 @@ int interpolation_search(int *array, size_t size, int value)
 			printf(" = [%d]\n", array[pos]);
 		}
 
-		if (array[pos] == value																									return ((int)pos);
+		if (array[pos] == value)
+			return ((int)pos);
 
 		if (array[pos] < value)
 			low = pos + 1;
